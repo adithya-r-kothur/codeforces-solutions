@@ -1,0 +1,1 @@
+{"name":"Local: petyaandstrings","url":"d:\\code\\codeforces\\petyaandstrings.cpp","tests":[{"id":1651471050663,"input":"abcdefg\nAbCdEfF\n","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\codeforces\\petyaandstrings.cpp","group":"local","local":true}
