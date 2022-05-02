@@ -1,1 +1,1 @@
-{"name":"Local: helpfullmaths","url":"d:\\code\\codeforces\\helpfullmaths.cpp","tests":[{"id":1651472565520,"input":"3+2+1\n","output":"1+2+3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\codeforces\\helpfullmaths.cpp","group":"local","local":true}
+{"name":"Local: helpfullmaths","url":"d:\\code\\codeforces\\helpfullmaths.cpp","tests":[{"id":1651472565520,"input":"3+2+1","output":"1+2+3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\codeforces\\helpfullmaths.cpp","group":"local","local":true}

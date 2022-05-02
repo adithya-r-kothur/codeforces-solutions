@@ -1,0 +1,1 @@
+{"name":"Local: wordcapitalization","url":"d:\\code\\codeforces\\wordcapitalization.cpp","tests":[{"id":1651473387151,"input":"konjac\n\n","output":"Konjac\n\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\code\\codeforces\\wordcapitalization.cpp","group":"local","local":true}
