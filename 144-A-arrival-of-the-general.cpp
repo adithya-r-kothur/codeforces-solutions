@@ -1,65 +1,38 @@
-#include<bits/stdc++.h>
-
+#include <iostream>
+#include<cmath>
 using namespace std;
 
-int main()
-{
-    int n;
-    cin>>n;
+int main() {
+int n;
+int maxvalue=0;
+int minvalue=1000;
+int maxindex=0;
+int minindex=0;
+cin>>n;
+for(int i=0;i<n;i++){
+	int x;
+	cin>>x;
+if(x>maxvalue){
+	maxindex=i;
+	maxvalue=x;
+}
+ if(x<=minvalue){
+	minindex=i;
+	minvalue=x;
+ }
+}
+//cout<<maxindex<<"   max"<<minindex<<"min\n";
+if(maxindex>minindex){
+	cout<<(maxindex-1)+(n-minindex)-1;
+}
+else{
+	cout<<(maxindex-1)+(n-minindex);
 
-    int a[n];
-    int maxi=INT_MIN,mini=INT_MAX;
-
-
-    for(int i=0;i<n;i++)
-    {
-       cin>>a[i];
-       maxi=max(maxi,a[i]);
-       mini=min(mini,a[i]);
-    }
-    
-    int maxpos=INT_MAX;
-
-    for(int i=0;i<n;i++)
-    {
-        if(maxi==a[i] )
-        {
-            maxpos=i;
-            maxpos=min(maxpos,i);
-            
-        }
-    }
-
-    int minpos=INT_MIN;
+}
 
 
 
 
-    for(int i=0;i<n;i++)
-    {
-        if(mini==a[i] )
-        {
-            minpos=i;
-            minpos=max(minpos,i);
-            
-        }
-    }
 
-    int ans=0;
-
-    if((maxpos>n/2 && minpos<n/2) || (maxpos<=n/2 && minpos<=n/2 && minpos<maxpos) ||(maxpos>=n/2 && minpos>=n/2 && minpos>maxpos))
-    {
-        ans=maxpos+((n-1)-(minpos))-1;
-    }
-    else if(maxpos<n/2 && minpos>n/2)
-    {
-        ans=maxpos+((n-1)-(minpos));
-    }
-
-    cout<<ans<<" \n";
-    
-    
-
-
-    return 0;
+	return 0;
 }
